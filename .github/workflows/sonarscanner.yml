@@ -19,7 +19,7 @@ jobs:
       uses: sonarsource/sonarcloud-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: inputs.sonar_token
+        SONAR_TOKEN: ${{ inputs.sonar_token }}
       with:
         args: >
           -Dsonar.organization=knoldus-techhub-repo
